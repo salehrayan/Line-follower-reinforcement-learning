@@ -1,0 +1,14 @@
+
+@salehryan2906
+0 seconds ago
+ @mahdi_shahbazi  
+سلام. این توضیحات رو از سایت ویباتز دیدم:
+The synchronization field specifies if a robot controller must be synchronized with the simulator or not.
+
+If synchronization is TRUE (the default), the simulator will wait for the controller's wb_robot_step function call whenever necessary to keep the simulation and the controller synchronized. So for example if the simulation step (WorldInfo.basicTimeStep) is 16 ms and the control step is 64 ms, then Webots will always execute precisely 4 simulation steps during one control step. After the 4th simulation step, Webots will wait for the controller's next control step (call to wb_robot_step(64)).
+
+If synchronization is FALSE, the simulator will run as fast a possible without waiting for the control step. So for example, with the same simulation step (16 ms) and control step (64 ms) as before, if the simulator has finished the 4th simulation step but the controller has not yet reached the call to wb_robot_step(64), then Webots will not wait; instead it will continue the simulation using the latest actuation commands. Hence, if synchronization is FALSE, the number of simulation steps that are executed during a control step may vary; this will depend on the current simulator and controller speeds and on the current CPU load, and hence the outcome of the simulation may also vary. Note that if the number of simulation steps per control step varies, this will appear as a variations of the "speed of the physics" in the controller's point of view, and this will appear as a variation of the robot's reaction speed in the user's point of view.
+
+
+طبق این توضیحات لازم نیست بعد از استپ، سرعت هارو صفر کنیم. ولی در آزمایش دیدم که صفر کردن خیلی جواب رو بهتر میکنه و همچنین دیدم که اگر صفر نکنم ربات بیشتر مستقیم میره و اگر صفر کنم کمتر مستقیم میره و چپ و راست هم بیشتر میشه. منشا این اتفاقات رو نمیدونم.
+
