@@ -1,0 +1,18 @@
+<robot name="custom_box">
+  <link name="box">
+    <visual>
+      <geometry>
+        <box size="100 100 0.01"/> <!-- Adjust the size as needed -->
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="100 100 0.01"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+</robot>
