@@ -3,16 +3,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="10 10 0.01"/>  <!-- Plane dimensions -->
+        <box size="10 10 10"/>  <!-- Plane dimensions -->
       </geometry>
-      <material name="plane_material">
-        <texture filename="E:/github/Line_follower_test/PyBullet_test/Code/utils/internet robot/track_texture.png"/> <!-- Ensure this path is correct -->
-      </material>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <box size="10 10 0.01"/>  <!-- Same dimensions for collision -->
+        <box size="10 10 10"/>  <!-- Same dimensions for collision -->
       </geometry>
     </collision>
     <inertial>

@@ -16,20 +16,21 @@ track_points = [(point[0][0], point[0][1]) for point in track_contour[0::10]]
 
 image_height, image_width = binary_image.shape
 
-plane_width = 10.0
-plane_height = 10.0
+plane_width = 20.0
+plane_height = 20.0
 
 def pixel_to_world(pixel_x, pixel_y, image_width, image_height, plane_width, plane_height):
-    world_x = (pixel_x / image_width) * plane_width
-    world_y = (pixel_y / image_height) * plane_height
+    world_x = (pixel_x / image_width) * plane_width - plane_width/2
+    world_y = (pixel_y / image_height) * plane_height - plane_height/2
     return (world_x, world_y)
 
 
 track_waypoints = [pixel_to_world(x, y, image_width, image_height, plane_width, plane_height) for x, y in track_points]
 
-for waypoint in track_waypoints:
-    print(waypoint)
+# for waypoint in track_waypoints:
+#     print(waypoint)
 
+np.save('track_waypoints', np.stack(track_waypoints))
 
 
 
