@@ -5,15 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a48e524b-0c02-4781-b6ce-dc8d10a5d975" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/get_track_waypoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/utils/get_track_waypoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/Pybullet_env_internet_robot.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/Pybullet_env_internet_robot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/Pybullet_env_internet_robot_testing_plane_making.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/Pybullet_env_internet_robot_cameraTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/simple_plane - Copy.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/simple_plane - Copy.urdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/simple_plane.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/simple_plane.urdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_env_test1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_env_test2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_vid_record.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyBullet_test/Code/Pybullet_env_internet_robot_cameraTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PyBullet_test/Code/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/Line-Following.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/Pybullet_env_internet_robot.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/Pybullet_env_internet_robot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/Pybullet_env_internet_robot_cameraTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/simple_plane - Copy.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/utils/bin/simple_plane - Copy.urdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/simple_plane.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/utils/bin/simple_plane.urdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/simplecar - Copy.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/simplecar - Copy.urdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/simplecar.urdf" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/utils/bin/simplecar.urdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/track_texture.png" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/utils/track_texture.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/pybullet_env_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/simple_robot_car_1.urdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/utils/track_waypoints.npy" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/track_waypoints.npy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +63,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.LineFollowerV0_env_test1.executor": "Run",
+    "Python.LineFollowerV0_env_test2.executor": "Run",
+    "Python.LineFollowerV0_env_test3.executor": "Run",
+    "Python.LineFollowerV0_vid_record.executor": "Run",
+    "Python.Pybullet_env_internet_robot (1).executor": "Run",
     "Python.Pybullet_env_internet_robot.executor": "Run",
-    "Python.Pybullet_env_internet_robot_cameraTest.executor": "Debug",
+    "Python.Pybullet_env_internet_robot_cameraTest (1).executor": "Run",
+    "Python.Pybullet_env_internet_robot_cameraTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -66,12 +80,18 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Pybullet_env_internet_robot_cameraTest">
-    <configuration name="Pybullet_env_internet_robot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\github\Line_follower_test\PyBullet_test\Code" />
+      <recent name="E:\github\Line_follower_test\PyBullet_test\Code\utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.LineFollowerV0_vid_record">
+    <configuration name="LineFollowerV0_env_test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Line_follower_test" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,12 +100,104 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyBullet_test/Code" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/Pybullet_env_internet_robot.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_env_test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LineFollowerV0_env_test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Line_follower_test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyBullet_test/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_env_test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LineFollowerV0_env_test3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Line_follower_test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyBullet_test/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_env_test3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LineFollowerV0_vid_record" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Line_follower_test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyBullet_test/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_vid_record.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Pybullet_env_internet_robot_cameraTest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Line_follower_test" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyBullet_test/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyBullet_test/Code/Pybullet_env_internet_robot_cameraTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -103,12 +215,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PyBullet_test/Code/utils" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/Pybullet_env_internet_robot_cameraTest.py" />
+      <option name="SCRIPT_NAME" value="E:\github\Line_follower_test\PyBullet_test\Code\Pybullet_env_internet_robot_cameraTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,8 +231,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Pybullet_env_internet_robot_cameraTest" />
-        <item itemvalue="Python.Pybullet_env_internet_robot" />
+        <item itemvalue="Python.LineFollowerV0_vid_record" />
+        <item itemvalue="Python.LineFollowerV0_env_test3" />
+        <item itemvalue="Python.Pybullet_env_internet_robot_cameraTest (1)" />
+        <item itemvalue="Python.LineFollowerV0_env_test1" />
+        <item itemvalue="Python.LineFollowerV0_env_test2" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +256,11 @@
       <updated>1716396964619</updated>
       <workItem from="1716396966865" duration="657000" />
       <workItem from="1716397631831" duration="8221000" />
+      <workItem from="1716466279479" duration="26736000" />
+      <workItem from="1716508531180" duration="181000" />
+      <workItem from="1716508736721" duration="721000" />
+      <workItem from="1716550504932" duration="1701000" />
+      <workItem from="1716552244832" duration="19303000" />
     </task>
     <servers />
   </component>
@@ -151,15 +271,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot/Pybullet_env_internet_robot_cameraTest.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/PyBullet_test/Code/Pybullet_env_internet_robot_cameraTest.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/PyBullet_test/Code/utils.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Pybullet_env_internet_robot_cameraTest_py$Pybullet_env_internet_robot__1_.coverage" NAME="Pybullet_env_internet_robot (1) Coverage Results" MODIFIED="1716470923749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
+    <SUITE FILE_PATH="coverage/Pybullet_env_internet_robot_cameraTest_py$Pybullet_env_internet_robot_cameraTest.coverage" NAME="Pybullet_env_internet_robot_cameraTest Coverage Results" MODIFIED="1716466714424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot" />
+    <SUITE FILE_PATH="coverage/Pybullet_env_internet_robot_cameraTest_py$Pybullet_env_internet_robot_cameraTest__1_.coverage" NAME="Pybullet_env_internet_robot_cameraTest (1) Coverage Results" MODIFIED="1716487447203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
+    <SUITE FILE_PATH="coverage/LineFollowerV0_env_test1_py$LineFollowerV0_vid_record.coverage" NAME="LineFollowerV0_vid_record Coverage Results" MODIFIED="1716578291280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
+    <SUITE FILE_PATH="coverage/LineFollowerV0_env_test1_py$LineFollowerV0_env_test2.coverage" NAME="LineFollowerV0_env_test2 Coverage Results" MODIFIED="1716573693033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
     <SUITE FILE_PATH="coverage/Line_follower_test$Pybullet_env_internet_robot_cameraTest.coverage" NAME="Pybullet_env_internet_robot_cameraTest Coverage Results" MODIFIED="1716413886002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot" />
+    <SUITE FILE_PATH="coverage/LineFollowerV0_env_test1_py$Pybullet_env_internet_robot_cameraTest__1_.coverage" NAME="Pybullet_env_internet_robot_cameraTest (1) Coverage Results" MODIFIED="1716578992222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
     <SUITE FILE_PATH="coverage/Line_follower_test$Pybullet_env_internet_robot.coverage" NAME="Pybullet_env_internet_robot Coverage Results" MODIFIED="1716403838608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot" />
+    <SUITE FILE_PATH="coverage/Pybullet_env_internet_robot_cameraTest_py$LineFollowerV0_env_test1.coverage" NAME="LineFollowerV0_env_test1 Coverage Results" MODIFIED="1716507338824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
+    <SUITE FILE_PATH="coverage/LineFollowerV0_env_test1_py$LineFollowerV0_env_test3.coverage" NAME="LineFollowerV0_env_test3 Coverage Results" MODIFIED="1716580842366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
+    <SUITE FILE_PATH="coverage/LineFollowerV0_env_test1_py$LineFollowerV0_env_test1.coverage" NAME="LineFollowerV0_env_test1 Coverage Results" MODIFIED="1716575016921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
   </component>
 </project>
