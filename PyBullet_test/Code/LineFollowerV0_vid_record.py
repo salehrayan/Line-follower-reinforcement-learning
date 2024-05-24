@@ -93,7 +93,7 @@ class LineFollowerV0(gym.Env):
 
         for _ in range(int(0.1 / (1 / 240))):
             self.client.stepSimulation()
-        sleep(4/240)
+        sleep(3/240)
 
         closest_waypoint_distance, passed = self.waypoint_monitor.step_monitor(threshold=0.2)
 

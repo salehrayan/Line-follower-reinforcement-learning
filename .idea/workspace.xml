@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a48e524b-0c02-4781-b6ce-dc8d10a5d975" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_env_test3.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_env_test3_TRPO_final.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_vid_record.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_vid_record.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +245,7 @@
       <workItem from="1716508531180" duration="181000" />
       <workItem from="1716508736721" duration="721000" />
       <workItem from="1716550504932" duration="1701000" />
-      <workItem from="1716552244832" duration="27166000" />
+      <workItem from="1716552244832" duration="27964000" />
     </task>
     <servers />
   </component>
