@@ -8,7 +8,7 @@ from utils import *
 import gymnasium as gym
 from gymnasium import spaces
 from stable_baselines3.common.env_checker import check_env
-from stable_baselines3 import PPO, A2C, DQN
+from sb3_contrib import TRPO
 from stable_baselines3.common.callbacks import StopTrainingOnNoModelImprovement, EvalCallback
 from stable_baselines3.common.logger import configure
 from stable_baselines3.common.vec_env import DummyVecEnv, VecVideoRecorder, VecNormalize, VecTransposeImage, VecEnv
@@ -38,7 +38,7 @@ class LineFollowerV0(gym.Env):
     def __init__(self, max_steps, render_mode='rgb_array'):
         super().__init__()
 
-        self.client = bullet_client.BulletClient(connection_mode=p.DIRECT)
+        self.client = bullet_client.BulletClient(connection_mode=p.GUI)
         self.client.setAdditionalSearchPath(pybullet_data.getDataPath())
         self.client.setGravity(0, 0, -10)
 
@@ -56,7 +56,7 @@ class LineFollowerV0(gym.Env):
 
         self.render_mode = render_mode
         self.observation_space = spaces.MultiDiscrete([2, 2, 2], dtype=np.int32)
-        self.action_space = spaces.Discrete(3)
+        self.action_space = spaces.Box(low=-1, high=1, shape=(1,), dtype=np.float32)
         self.max_steps = max_steps
         self.n_step = 0
 
@@ -79,30 +79,21 @@ class LineFollowerV0(gym.Env):
         info = {}
         self.angle = 0
         for joint_index in self.wheel_indices:
-            self.client.setJointMotorControl2(self.car, joint_index, self.client.VELOCITY_CONTROL, targetVelocity=3)
+            self.client.setJointMotorControl2(self.car, joint_index, self.client.VELOCITY_CONTROL, targetVelocity=4)
         return observation, info
 
     def step(self, action):
 
+        # user_throttle = (action[0] + 1) * 10
+        user_angle = action[0] * 1
 
-        if action == 0:
-            self.angle = 1
-            for joint_index in self.hinge_indices:
-                self.client.setJointMotorControl2(self.car, joint_index, self.client.POSITION_CONTROL,
-                                                  targetPosition=self.angle)
-        elif action == 1:
-            self.angle = -1
-            for joint_index in self.hinge_indices:
-                self.client.setJointMotorControl2(self.car, joint_index, self.client.POSITION_CONTROL,
-                                                  targetPosition=self.angle)
-        else:
-            self.angle = 0
-            for joint_index in self.hinge_indices:
-                self.client.setJointMotorControl2(self.car, joint_index, self.client.POSITION_CONTROL,
-                                                  targetPosition=self.angle)
+        for joint_index in self.hinge_indices:
+            self.client.setJointMotorControl2(self.car, joint_index, self.client.POSITION_CONTROL,
+                                              targetPosition=user_angle)
 
-        for _ in range(int(0.2 / (1 / 240))):
+        for _ in range(int(0.1 / (1 / 240))):
             self.client.stepSimulation()
+        sleep(4/240)
 
         closest_waypoint_distance, passed = self.waypoint_monitor.step_monitor(threshold=0.2)
 
@@ -111,13 +102,12 @@ class LineFollowerV0(gym.Env):
 
         terminated_good = (self.waypoint_monitor.num_waypoints_passed == self.waypoint_monitor.num_waypoints_total)
 
-        car_pos, _ = self.client.getBasePositionAndOrientation(self.car)
         terminated_bad = (closest_waypoint_distance > 3)
         truncated = (self.n_step == self.max_steps)
 
         passed_ratio = self.waypoint_monitor.num_waypoints_passed / self.waypoint_monitor.num_waypoints_total
-        reward = ( ((1 - observation[1]) * 5 ) + ((1 - observation[0]) * 1 ) + ((1 - observation[2]) * 1 ) -
-                  observation[0] * observation[1] * observation[2] * 1)
+        reward = ( ((1 - observation[1]) * 0.5 ) + ((1 - observation[0]) * 0.1 ) + ((1 - observation[2]) * 0.1 ) -
+                  observation[0] * observation[1] * observation[2] * 0.1 - closest_waypoint_distance**2)
 
         terminated = terminated_bad or terminated_good
         info = {}
@@ -133,7 +123,7 @@ class LineFollowerV0(gym.Env):
 
 dir_path = 'E:/github/Line_follower_test/PyBullet_test/Code/PPO_LineFollowerV0_results_2/'
 
-env = LineFollowerV0(max_steps=2000)
+env = LineFollowerV0(max_steps=5000)
 # env2 = LineFollowerV0(max_steps=2000)
 # env3 = LineFollowerV0(max_steps=2000)
 # env4 = LineFollowerV0(max_steps=2000)
@@ -142,14 +132,14 @@ env = LineFollowerV0(max_steps=2000)
 # env = Monitor(env)
 # eval_env = LineFollowerV0(max_steps=3000)
 vec_env = DummyVecEnv([lambda: env])
-vec_env = VecVideoRecorder(vec_env, dir_path, record_video_trigger=lambda x: x == 0,
-                           video_length=500, name_prefix='PPO_LineFollowerV0')
+# vec_env = VecVideoRecorder(vec_env, dir_path, record_video_trigger=lambda x: x == 0,
+#                            video_length=500, name_prefix='PPO_LineFollowerV0')
 
-model = DQN.load(r'C:\Users\ASUS\Downloads/best_model.zip')
+model = TRPO.load(r'TRPO_LineFollowerV0_results_final/best_model.zip')
 
 obs = vec_env.reset()
 
-for _ in range(500+1):
+for _ in range(3000+1):
     action = model.predict(obs)
     next_obs, _, _, _ = vec_env.step(action)
     obs = next_obs
