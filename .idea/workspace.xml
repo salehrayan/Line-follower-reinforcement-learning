@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a48e524b-0c02-4781-b6ce-dc8d10a5d975" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_vid_record.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyBullet_test/Code/LineFollowerV0_vid_record.py" afterDir="false" />
     </list>
@@ -46,29 +47,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.LineFollowerV0_env_test1.executor": "Run",
-    "Python.LineFollowerV0_env_test2.executor": "Run",
-    "Python.LineFollowerV0_env_test3.executor": "Run",
-    "Python.LineFollowerV0_vid_record.executor": "Run",
-    "Python.Pybullet_env_internet_robot (1).executor": "Run",
-    "Python.Pybullet_env_internet_robot.executor": "Run",
-    "Python.Pybullet_env_internet_robot_cameraTest (1).executor": "Run",
-    "Python.Pybullet_env_internet_robot_cameraTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Anaconda3/condabin/conda.bat",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.LineFollowerV0_env_test1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LineFollowerV0_env_test2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LineFollowerV0_env_test3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LineFollowerV0_vid_record.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Pybullet_env_internet_robot (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Pybullet_env_internet_robot.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Pybullet_env_internet_robot_cameraTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.Pybullet_env_internet_robot_cameraTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Anaconda3/condabin/conda.bat&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\github\Line_follower_test\PyBullet_test\Code" />
@@ -245,7 +246,9 @@
       <workItem from="1716508531180" duration="181000" />
       <workItem from="1716508736721" duration="721000" />
       <workItem from="1716550504932" duration="1701000" />
-      <workItem from="1716552244832" duration="27964000" />
+      <workItem from="1716552244832" duration="28275000" />
+      <workItem from="1716625834374" duration="1927000" />
+      <workItem from="1716637168368" duration="852000" />
     </task>
     <servers />
   </component>
@@ -269,16 +272,17 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Pybullet_env_internet_robot_cameraTest_py$Pybullet_env_internet_robot__1_.coverage" NAME="Pybullet_env_internet_robot (1) Coverage Results" MODIFIED="1716470923749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
+    <SUITE FILE_PATH="coverage/LineFollowerV0_vid_record_py$LineFollowerV0_vid_record.coverage" NAME="LineFollowerV0_vid_record Coverage Results" MODIFIED="1716637421097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
     <SUITE FILE_PATH="coverage/Pybullet_env_internet_robot_cameraTest_py$Pybullet_env_internet_robot_cameraTest.coverage" NAME="Pybullet_env_internet_robot_cameraTest Coverage Results" MODIFIED="1716466714424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot" />
     <SUITE FILE_PATH="coverage/Pybullet_env_internet_robot_cameraTest_py$Pybullet_env_internet_robot_cameraTest__1_.coverage" NAME="Pybullet_env_internet_robot_cameraTest (1) Coverage Results" MODIFIED="1716487447203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
-    <SUITE FILE_PATH="coverage/LineFollowerV0_env_test1_py$LineFollowerV0_vid_record.coverage" NAME="LineFollowerV0_vid_record Coverage Results" MODIFIED="1716590909161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
     <SUITE FILE_PATH="coverage/LineFollowerV0_env_test1_py$LineFollowerV0_env_test2.coverage" NAME="LineFollowerV0_env_test2 Coverage Results" MODIFIED="1716573693033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
     <SUITE FILE_PATH="coverage/Line_follower_test$Pybullet_env_internet_robot_cameraTest.coverage" NAME="Pybullet_env_internet_robot_cameraTest Coverage Results" MODIFIED="1716413886002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot" />
     <SUITE FILE_PATH="coverage/LineFollowerV0_env_test1_py$Pybullet_env_internet_robot_cameraTest__1_.coverage" NAME="Pybullet_env_internet_robot_cameraTest (1) Coverage Results" MODIFIED="1716578992222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
-    <SUITE FILE_PATH="coverage/Line_follower_test$Pybullet_env_internet_robot.coverage" NAME="Pybullet_env_internet_robot Coverage Results" MODIFIED="1716403838608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot" />
     <SUITE FILE_PATH="coverage/Pybullet_env_internet_robot_cameraTest_py$LineFollowerV0_env_test1.coverage" NAME="LineFollowerV0_env_test1 Coverage Results" MODIFIED="1716507338824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
     <SUITE FILE_PATH="coverage/LineFollowerV0_env_test1_py$LineFollowerV0_env_test3.coverage" NAME="LineFollowerV0_env_test3 Coverage Results" MODIFIED="1716588138444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
+    <SUITE FILE_PATH="coverage/Pybullet_env_internet_robot_cameraTest_py$Pybullet_env_internet_robot__1_.coverage" NAME="Pybullet_env_internet_robot (1) Coverage Results" MODIFIED="1716470923749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
+    <SUITE FILE_PATH="coverage/LineFollowerV0_env_test1_py$LineFollowerV0_vid_record.coverage" NAME="LineFollowerV0_vid_record Coverage Results" MODIFIED="1716592055670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
+    <SUITE FILE_PATH="coverage/Line_follower_test$Pybullet_env_internet_robot.coverage" NAME="Pybullet_env_internet_robot Coverage Results" MODIFIED="1716403838608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code/utils/internet robot" />
     <SUITE FILE_PATH="coverage/LineFollowerV0_env_test1_py$LineFollowerV0_env_test1.coverage" NAME="LineFollowerV0_env_test1 Coverage Results" MODIFIED="1716575016921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PyBullet_test/Code" />
   </component>
 </project>

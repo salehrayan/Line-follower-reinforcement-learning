@@ -97,17 +97,22 @@ class LineFollowerV0(gym.Env):
 
         closest_waypoint_distance, passed = self.waypoint_monitor.step_monitor(threshold=0.2)
 
+        p.addUserDebugPoints(self.waypoint_monitor.waypoints_monitor,
+                             np.ones_like(self.waypoint_monitor.waypoints_monitor) * np.array([1, 0, 0]), lifeTime=0.5)
+        p.addUserDebugText(f'clossest waypoint: {closest_waypoint_distance}\npassed:{passed}', [1, 1, 1], lifeTime=0.5)
+
         observation = get_camera_image(self.car, self.client)
         self.n_step += 1
 
         terminated_good = (self.waypoint_monitor.num_waypoints_passed == self.waypoint_monitor.num_waypoints_total)
 
-        terminated_bad = (closest_waypoint_distance > 3)
+        terminated_bad = (closest_waypoint_distance > 1.5)
         truncated = (self.n_step == self.max_steps)
 
         passed_ratio = self.waypoint_monitor.num_waypoints_passed / self.waypoint_monitor.num_waypoints_total
-        reward = ( ((1 - observation[1]) * 0.5 ) + ((1 - observation[0]) * 0.1 ) + ((1 - observation[2]) * 0.1 ) -
-                  observation[0] * observation[1] * observation[2] * 0.1 - closest_waypoint_distance**2)
+        reward = (((1 - observation[1]) * 0.5) + ((1 - observation[0]) * 0.1) + ((1 - observation[2]) * 0.1) -
+                  observation[0] * observation[1] * observation[2] * 0.1 - closest_waypoint_distance ** 2 -
+                  terminated_bad * 50)
 
         terminated = terminated_bad or terminated_good
         info = {}
